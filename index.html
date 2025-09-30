@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas & Respuestas</title>
+    <link rel="icon" href="img/preguntas.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="contenedor">
+            <h1>Preguntas & Respuestas</h1>
+            <div class="contenedor_preguntas" id="contenedor_preguntas">
+                <div id="alerta" class="alerta">
+                    <!-- Las alertas se generan dinamicamente desde el javascript  -->
+                </div>
+                <div id="reloj-puntuacion" class="reloj-puntuacion">
+                    <div id="reloj" class="reloj">
+                        <div id="tiempo-restante" class="tiempo-restante">
+                            <!-- El tiempo restante se genera dinamicamente desde el javascript  -->
+                        </div>
+                    </div>
+                    <div id="puntuacion" class="puntuacion">
+                        <span id="puntos">
+                            Puntos: 0
+                            <!-- La puntuacion se genera dinamicamente desde el javascript -->
+                        </span>
+                    </div>
+                </div>
+                <h2 id="pregunta" class="pregunta">
+                    <!-- La pregunta se genera dinamicamente desde el javascript  --> 
+                </h2>
+                <div class="contenedor_imagen">
+                    <img src="" alt="Imagen de la pregunta" id="imagen-categoria" class="imagen-pregunta">
+                    <!-- La imagen de cada categoria se genera dinamicamente desde el javascript  --> 
+                </div>
+                <ul id="respuesta" class="respuestas">
+                        <!-- Las respuestas se generan dinamicamente desde el javascript  --> 
+                </ul>
+                <div class='navegacion'>
+                    <ul>
+                        <li class="lista">
+                            <a href="#aleatoria" onclick="seleccionarCategoria()">
+                                <span class="icono">
+                                    <img src="img/aleatorio.png" alt="ALEATORIO">
+                                </span>
+                            </a>
+                        </li>
+                        <li class="lista">
+                            <a href="#geografia" onclick="seleccionarCategoria('Geografia')">
+                                <span class="icono">
+                                    <img src="img/geografia.png" alt="GEOGRAFIA">
+                                </span>
+                            </a>
+                        </li>
+                        <li class="lista">
+                            <a href="#literatura" onclick="seleccionarCategoria('Literatura')">
+                                <span class="icono">
+                                    <img src="img/literatura.png" alt="LITERATURA">
+                                </span>
+                            </a>
+                        </li>
+                        <li class="lista">
+                            <a href="#historia" onclick="seleccionarCategoria('Historia')">
+                                <span class="icono">
+                                    <img src="img/historia.png" alt="HISTORIA">
+                                </span>
+                            </a>
+                        </li>
+                        <li class="lista">
+                            <a href="#ciencia" onclick="seleccionarCategoria('Ciencia')">
+                                <span class="icono">
+                                    <img src="img/ciencia.png" alt="CIENCIA">
+                                </span>
+                            </a>
+                        </li>
+                        <li class="lista">
+                            <a href="#arte" onclick="seleccionarCategoria('Arte')">
+                                <span class="icono">
+                                    <img src="img/arte.png" alt="ARTE">
+                                </span>
+                            </a>
+                        </li>
+                        <li class="lista">
+                            <a href="#deporte" onclick="seleccionarCategoria('Deporte')">
+                                <span class="icono">
+                                    <img src="img/deporte.png" alt="DEPORTE">
+                                </span>
+                            </a>
+                        </li>
+                        <li class="lista">
+                            <a href="#algebra" onclick="seleccionarCategoria('Algebra')">
+                                <span class="icono">
+                                    <img src="img/algebra.png" alt="ALGEBRA">
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>    
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
